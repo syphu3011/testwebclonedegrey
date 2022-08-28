@@ -281,7 +281,7 @@ button {
     margin-right: 10px;
     margin-bottom: 50px;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1080px) {
     .grid_content {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -292,7 +292,7 @@ button {
     .lookup_div {
         flex: 0.8;
         transition: flex 0.6s;
-    }
+    }   
 }
 @media screen and (max-width: 550px) {
     .slide-icon {
