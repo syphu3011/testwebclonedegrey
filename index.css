@@ -366,6 +366,21 @@ button {
     .lookup_div {
         width: 150px;
     }
+    .more-btn, .account-btn, .cart-btn {
+        width: 20px;
+        height: 20px;
+        padding: 0;
+    }
+    .hamburger-icon, .cart-icon, .account-icon {
+        margin-top: 3px;
+        width: 60%;
+    }
+    .cart-icon {
+        margin-left: -1px;
+    }
+    .cart-count-p {
+        font-size: 8px;
+    }
 }
 
 @media screen and (max-width: 350px) {
