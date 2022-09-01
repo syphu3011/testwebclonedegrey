@@ -3,14 +3,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 400px;
-    border-style: solid;
-    border-color: rgb(244, 244, 244);
-    border-width: 1px;
-    box-shadow: 1px 1px rgba(159, 159, 159, 0.2);
+    position: relative;
     margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
     margin-bottom: 10px;
     cursor: pointer;
 }
@@ -19,7 +13,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 400px;
     margin-top: 5px;
     margin-right: 5px;
     margin-left: 5px;
@@ -27,22 +20,85 @@
 .price_div {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    align-items: left;
+    justify-content: start;
 }
 .name_p {
-    margin-left: 5px;
+    margin-left: 20px;
     margin-right: 5px;       
     margin-top: 10px;
     margin-bottom: 0px;
 }
 .price_p {
-    margin-left: 5px;
+    margin-left: 20px;
     margin-right: 5px;       
     margin-top: 5px;
     font-weight: bold;
+    font-size: 14px;
+    color: #8b572a;
+}
+.old_price {
+    margin-left: 3px;
+    margin-right: 5px;       
+    margin-top: 6px;
+    font-size: 13px;
+    text-decoration: line-through;
+    color: rgb(158, 158, 158);
 }
 .preview_img {
     width: 100%;
     object-fit: contain;
+}
+
+.discount {
+    background-color: red;
+    color: white;
+    height: 21px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 12px;
+    top: 5px;
+    left: 5px;
+}
+.price_cur_div {
+    display: flex;
+}
+.grid_content::-webkit-scrollbar {
+    display: none;
+}
+.grid_content_container {
+    position: relative;
+    width: 90%;
+    top: 100px;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+}
+.grid_content {
+    display: inline-flex;
+    position: relative;
+    list-style: none;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.content_div {
+    position: relative;
+    min-width: 25%;
+}
+@media screen and (min-width:0px) {
+    .content_div {
+        min-width: 50%;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .content_div {
+        min-width: 25%;
+    }
 }
