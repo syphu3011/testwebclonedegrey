@@ -315,7 +315,7 @@ button {
     }
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 767px) {
     .left-mid-section {
         display: flex;
         opacity: 1;
@@ -362,7 +362,7 @@ button {
         bottom: 20%;
     }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 700px) {
     .lookup_div {
         width: 150px;
     }
@@ -380,6 +380,18 @@ button {
     }
     .cart-count-p {
         font-size: 8px;
+    }
+    .name-icon {
+        height: 40px;
+    }
+    .top_bar_container {
+        height: 60px;
+    }
+    .lookup_div {
+        height: 20px;
+    }
+    .orange-blue-div {
+        top: 70px
     }
 }
 
